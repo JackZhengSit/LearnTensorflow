@@ -56,7 +56,7 @@ class roc_callback(Callback):
         return
 
     def on_epoch_end(self, epoch, logs={}):
-        # print(self.x.shape)
+        print(self.x.shape)
         y_pred = self.model.predict(self.x)
         roc = roc_auc_score(self.y, y_pred)
         y_pred_val = self.model.predict(self.x_val)
