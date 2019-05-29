@@ -19,7 +19,6 @@ n_classes = 10  # MNIST classes (0-9 digits)
 x = tf.placeholder(tf.float32, [None, n_steps, n_inputs])
 y = tf.placeholder(tf.float32, [None, n_classes])
 
-
 # define weights and biases
 weights = {
     'in': tf.Variable(tf.random_normal([n_inputs, n_hidden_units])),  # (28,128)
